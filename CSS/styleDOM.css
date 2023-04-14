@@ -250,3 +250,9 @@ img {
   opacity: 0;
   order: 1;
 }
+
+/* Sorteo */
+
+.players li {
+  list-style: none;
+}

@@ -8,6 +8,7 @@ import responsiveMedia from "./objeto_responsive.js";
 import { responsiveTester } from "./prueba_responsive.js";
 import { digitalClock, alarm } from "./relojYAlarma.js";
 import { scrollTop } from "./scroll_top_btn.js";
+import draw from "./sorteo.js";
 import { moveBall, shortcuts } from "./teclado.js";
 import darkTheme from "./tema_oscuro.js";
 
@@ -39,6 +40,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   userDiviceInfo("user-device");
   getGeolocation("geolocation");
   searchFilter(".card-filter", ".card");
+  draw("#winner-btn", ".player");
 });
 
 d.addEventListener("keydown", (e) => {
